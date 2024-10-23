@@ -69,6 +69,7 @@ hr {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/148/232/original/serene-autumn-landscape-with-single-tree-in-misty-lake-at-dawn-free-photo.jpeg?1729607144");
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .background-image:hover {
@@ -92,6 +93,7 @@ hr {
   border-radius: 10px;
   position: relative;
   left: -20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 .picture-grid img:hover {
   transform: scale(1.6);
@@ -105,4 +107,6 @@ hr {
   left: 20px;
   font-size: 30px;
   font-family: "Playfair Display", serif;
+}
+footer {
 }
