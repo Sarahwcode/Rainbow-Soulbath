@@ -39,15 +39,6 @@ hr {
   font-weight: bolder;
 }
 
-.list-of-links {
-  text-decoration: underline;
-  list-style-type: none;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  justify-content: space-between;
-  font-size: 20px;
-}
-
 .heading {
   display: flex;
   align-items: center;
@@ -82,7 +73,7 @@ hr {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: space-around;
+  justify-content: space-evenly;
   padding: 50px 50px;
   margin: 0px;
   grid-gap: 100px;
@@ -107,6 +98,4 @@ hr {
   left: 20px;
   font-size: 30px;
   font-family: "Playfair Display", serif;
-}
-footer {
 }
