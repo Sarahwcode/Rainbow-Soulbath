@@ -40,21 +40,20 @@ hr {
 }
 
 .heading {
-  display: flex;
-  align-items: center;
   font-family: "Playfair Display", serif;
-  font-weight: lighter;
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
-  color: rgb(255, 255, 255);
+  color: rgb(83, 81, 81);
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .first-image {
   border-radius: 10px;
-  margin-right: 50px;
   height: 400px;
-  top: -200px;
+  width: 400px;
+  opacity: 0.6;
 }
 .background-image {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/148/232/original/serene-autumn-landscape-with-single-tree-in-misty-lake-at-dawn-free-photo.jpeg?1729607144");
@@ -69,6 +68,7 @@ hr {
   opacity: 0.6;
   color: #0c0c0c;
 }
+
 .picture-grid {
   list-style-type: none;
   display: grid;
