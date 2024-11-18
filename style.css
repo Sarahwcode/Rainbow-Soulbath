@@ -84,4 +84,22 @@ hr {
   body {
     background: #edb1f1;
   }
+  .remove-grid {
+    display: flex;
+    flex-direction: column;
+  }
+  .remove-grid img {
+    width: 200px;
+    height: 150px;
+  }
+  .remove-grid span {
+    font-size: 18px;
+    position: relative;
+    top: -100px;
+    left: 7px;
+  }
+  .first-image {
+    width: 300px;
+    height: 300px;
+  }
 }
