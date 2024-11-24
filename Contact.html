@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="contact me" content="if you wish to contact me please use the email below" />
+    <meta
+      name="contact me"
+      content="if you wish to contact me please use the email below"
+    />
     <title>Contact me</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
@@ -15,9 +18,11 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="index.js"></script>
   </head>
   <body>
-      <div class="container">
+    <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Options</a>
@@ -52,8 +57,25 @@
           </div>
         </div>
       </nav>
-      <h1><a href="mailto:Carinacobourne@outlook.com" target="_blank">Carinacobourne@outlook.com</a></h1>
-    <h2><a href="Src/images.html">Images </a></h2>
-    <footer><a href="Index.html">Homepage</a></footer>
+
+      <h1>
+        <a href="mailto:Carinacobourne@outlook.com" target="_blank"
+          >Carinacobourne@outlook.com</a
+        >
+      </h1>
+
+      <form action="" id="sound-bath">
+        <input
+          type="text"
+          placeholder="Type something you want to gain from soundbath medistation expereince ... "
+          autofocus
+        />
+        <input type="submit" />
+      </form>
+      <div>
+        <p>Can Sound bath benefit?</p>
+      </div>
+      <footer><a href="Index.html">Homepage</a></footer>
+    </div>
   </body>
 </html>

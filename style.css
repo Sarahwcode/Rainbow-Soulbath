@@ -99,7 +99,6 @@ hr {
     left: 7px;
   }
   .first-image {
-    width: 300px;
-    height: 300px;
+    display: none;
   }
 }
