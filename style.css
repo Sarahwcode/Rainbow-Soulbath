@@ -49,6 +49,16 @@ hr {
   margin: 40px 20px 40px 20px;
   font-family: "Playfair Display", serif;
 }
+.landing-page button {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #edb1f1;
+}
+.landing-page button:hover {
+  cursor: pointer;
+  color: #edb1f1;
+  background: #7f00ff;
+}
 .landing-page-title {
   color: #edb1f1;
   padding-bottom: 50px;
@@ -87,6 +97,7 @@ hr {
   border-radius: 4px;
   height: 45%;
   width: 100%;
+  align-items: center;
 }
 .picture-grid img:hover {
   transform: scale(1.6);
@@ -112,6 +123,7 @@ hr {
   }
   .picture-grid {
     grid-template-columns: 4fr;
+    align-items: center;
   }
   .picture-grid img {
     width: 200px;
