@@ -112,6 +112,47 @@ hr {
   font-size: 30px;
   font-family: "Playfair Display", serif;
 }
+
+.email-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: black;
+}
+.email-link:hover {
+  color: var(--branding-color);
+}
+.social-links {
+  color: var(--branding-color);
+  font-size: 24px;
+  padding-bottom: 20px;
+  transition: all 150ms ease-in-out;
+  text-decoration: none;
+}
+.social-links a {
+  border-radius: 40%;
+  background-color: #e5e5e5;
+  padding: 5px 10px;
+  margin: 20px 20px;
+}
+.social-links a :hover {
+  color: white;
+  background-color: var(--branding-color);
+}
+.link-space {
+  padding: 20px 20px;
+}
+.contact-box {
+  background-color: #e5e5e5;
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+.contact-box p {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
 @media (max-width: 900px) {
   body {
     background: #edb1f1;
@@ -131,5 +172,11 @@ hr {
   }
   .sacred {
     display: none;
+  }
+  .landing-page-title {
+    display: none;
+  }
+  .landing-page-head {
+    font-size: 20px;
   }
 }
