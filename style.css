@@ -44,7 +44,7 @@ hr {
 }
 .landing-page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("Images/images.jpg");
+    url("Images/testing.jpeg");
   background-size: cover;
   background-position: center;
   text-align: center;
