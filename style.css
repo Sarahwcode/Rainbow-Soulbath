@@ -51,6 +51,7 @@ hr {
   padding: 300px;
   margin: 40px 20px 40px 20px;
   font-family: "Playfair Display", serif;
+  border-radius: 10px;
 }
 .landing-page button {
   padding: 10px 20px;
@@ -91,10 +92,9 @@ hr {
 .picture-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 20px;
-  max-width: 1400px;
-  align-items: center;
+  grid-gap: 10px;
 }
+
 .sacred {
   color: white;
   font-size: 30px;
@@ -107,6 +107,7 @@ hr {
   background-size: cover;
   padding: 100px;
   width: 100%;
+  border-radius: 30px;
 }
 .landing-page-pic2 {
   background-image: url("Images/image-2.jpg");
@@ -114,6 +115,7 @@ hr {
   background-size: cover;
   padding: 100px;
   width: 100%;
+  border-radius: 30px;
 }
 .landing-page-pic3 {
   background-image: url("Images/image-3.jpg");
@@ -121,6 +123,7 @@ hr {
   background-size: cover;
   padding: 100px;
   width: 100%;
+  border-radius: 30px;
 }
 .landing-page-pic4 {
   background-image: url("Images/image-4.jpg");
@@ -128,8 +131,11 @@ hr {
   background-size: cover;
   padding: 100px;
   width: 100%;
+  border-radius: 30px;
 }
-
+.lp-pic:hover {
+  cursor: pointer;
+}
 .email-link {
   font-family: "Poppins", sans-serif;
   font-size: 24px;
