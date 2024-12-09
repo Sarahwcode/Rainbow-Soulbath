@@ -9,13 +9,15 @@ body {
   background-color: #edb1f1;
 }
 .nav-item {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 24px;
+  padding: 12px;
 }
 .navbar-brand img {
   width: 60px;
   height: 60px;
 }
+
 section {
   padding-top: 20px;
 }
