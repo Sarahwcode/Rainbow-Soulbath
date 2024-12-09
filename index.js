@@ -1,7 +1,7 @@
 function soundResponse(event) {
   event.preventDefault();
   let inputValue = document.querySelector("#sound-bath-input");
-  alert(inputValue.value);
+  console.log(inputValue.value);
 }
 
 let submitSound = document.querySelector("#sound-bath");

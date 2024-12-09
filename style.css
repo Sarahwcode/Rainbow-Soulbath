@@ -5,6 +5,9 @@ body {
     rgba(223, 159, 247, 0.8) 93%
   );
 }
+section {
+  max-width: 1400px;
+}
 .about-me section {
   margin: 20px auto;
   display: block;
@@ -153,7 +156,7 @@ hr {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
-@media (max-width: 900px) {
+@media (max-width: 1100px) {
   body {
     background: #edb1f1;
   }
@@ -167,11 +170,15 @@ hr {
     align-items: center;
   }
   .picture-grid img {
-    width: 200px;
-    height: 200px;
+    width: 100%;
+
+    padding: 0px;
   }
   .sacred {
     display: none;
+  }
+  .landing-page {
+    padding: 150px;
   }
   .landing-page-title {
     display: none;
