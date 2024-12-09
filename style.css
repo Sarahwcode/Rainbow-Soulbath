@@ -102,7 +102,8 @@ hr {
 }
 
 .landing-page-pic1 {
-  background-image: url("Images/image-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("Images/image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px;
@@ -110,7 +111,8 @@ hr {
   border-radius: 30px;
 }
 .landing-page-pic2 {
-  background-image: url("Images/image-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("Images/image-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px;
@@ -118,7 +120,8 @@ hr {
   border-radius: 30px;
 }
 .landing-page-pic3 {
-  background-image: url("Images/image-3.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("Images/image-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px;
@@ -126,7 +129,8 @@ hr {
   border-radius: 30px;
 }
 .landing-page-pic4 {
-  background-image: url("Images/image-4.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("Images/image-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 100px;
@@ -137,7 +141,9 @@ hr {
   box-shadow: 2px 2px 2px 2px rgb(80, 79, 79);
 }
 .lp-pic:hover {
+  transition: all 900ms ease;
   cursor: pointer;
+  transform: rotateY(180deg) translateZ(50px);
 }
 .email-link {
   font-family: "Poppins", sans-serif;
