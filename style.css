@@ -6,7 +6,7 @@ body {
   );
 }
 section {
-  max-width: 1400px;
+  padding-top: 20px;
 }
 .about-me section {
   margin: 20px auto;
@@ -44,7 +44,7 @@ hr {
 }
 .landing-page {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("images.jpg");
+    url("Images/images.jpg");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -92,28 +92,42 @@ hr {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
-  padding: 20px;
-}
-
-.picture-grid img {
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-  border-radius: 4px;
-  height: 45%;
-  width: 100%;
+  max-width: 1400px;
   align-items: center;
 }
-.picture-grid img:hover {
-  transform: scale(1.6);
-  transition: all 300ms ease-in-out;
-  opacity: 0.6;
-}
 .sacred {
-  position: relative;
-  top: -185px;
   color: white;
-  left: 20px;
   font-size: 30px;
   font-family: "Playfair Display", serif;
+}
+
+.landing-page-pic1 {
+  background-image: url("Images/image-1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  width: 100%;
+}
+.landing-page-pic2 {
+  background-image: url("Images/image-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  width: 100%;
+}
+.landing-page-pic3 {
+  background-image: url("Images/image-3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  width: 100%;
+}
+.landing-page-pic4 {
+  background-image: url("Images/image-4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px;
+  width: 100%;
 }
 
 .email-link {
@@ -170,13 +184,9 @@ hr {
     align-items: center;
   }
   .picture-grid img {
-    width: 100%;
+    height: 50%;
+  }
 
-    padding: 0px;
-  }
-  .sacred {
-    display: none;
-  }
   .landing-page {
     padding: 150px;
   }
