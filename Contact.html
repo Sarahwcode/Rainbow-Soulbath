@@ -78,6 +78,18 @@
       </nav>
     </div>
 
+    <section>
+      <form id="form">
+        <label for="">Think of a word that brings you peace...</label>
+        <input
+          type="text"
+          placeholder="Enter the word here...."
+          id="form-text"
+        />
+        <input type="submit" id="form-submit" />
+      </form>
+      <h1 id="word">Word</h1>
+    </section>
     <footer>
       <div class="d-flex justify-content-between contact-box m-4">
         <div>
@@ -119,5 +131,15 @@
         >
       </p>
     </footer>
+    <script>
+      function peaceWord(event) {
+        event.preventDefault();
+        let formSubmit = document.querySelector("#form-text").value;
+        document.querySelector("#word").innerHTML = formSubmit;
+        console.log(formSubmit.value);
+      }
+      let formText = document.querySelector("#form");
+      formText.addEventListener("submit", peaceWord);
+    </script>
   </body>
 </html>
