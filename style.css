@@ -198,6 +198,22 @@ hr {
   font-size: 18px;
   font-family: "Poppins", sans-serif;
 }
+.submit {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #edb1f1;
+}
+.form-text {
+  padding: 10px 80px;
+  border-radius: 10px;
+  background: #f0d9f1;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+.lable-text {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+}
 @media (max-width: 1100px) {
   .first-image {
     width: 300px;
