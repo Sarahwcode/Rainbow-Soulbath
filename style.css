@@ -214,6 +214,9 @@ hr {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
 }
+.word {
+  padding: 20px;
+}
 @media (max-width: 1100px) {
   .first-image {
     width: 300px;
