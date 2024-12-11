@@ -2,9 +2,17 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="view images" content="take a look at sessions I have conducted" />
-    <title>Images</title>
-
+    <meta
+      name="meditation"
+      content="Sound bowl mediation with music and singing"
+    />
+    <title>Rainbow Soulbath - Soulbath meditation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -16,12 +24,21 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <link rel="stylesheet" href="../style.css" />
+
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/fbf3cd8783.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-      <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg nav-color">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Options</a>
+          <a class="navbar-brand" href="#">
+            <img src="../Images/Logo.jpg" alt=""
+          /></a>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,40 +50,122 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
+          <div
+            class="collapse navbar-collapse d-lg-flex justify-content-evenly"
+            id="navbarNav"
+          >
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="/Index.html"
+                <a class="nav-link" aria-current="page" href="../Index.html"
                   >Home</a
                 >
               </li>
-               <li class="nav-item">
-                <a class="nav-link" href="aboutme.html">About Me</a>
+              <li class="nav-item">
+                <a class="nav-link" href="../aboutme.html">About Me</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Classes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Src/images.html">Images</a>
+                <a class="nav-link active" href="Src/images.html">Gallery</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/Contact.html">Contact me</a>
+                <a class="nav-link" href="../Contact.html">Contact me</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    <div>
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/148/234/original/IMG-20241003-WA0004.jpg?1729609473"
-        alt=""
-        width="300"
-      />
-      <img
-        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/148/164/original/IMG-20241006-WA0009.jpg?1729540223"
-        alt=""
-        width="300"
-      />
     </div>
-</body>
+    <section>
+      <div class="container">
+        <div class="row pt-5 pb-5">
+          <div class="col-4">
+            <img
+              src="../Images/SB-1.jpg"
+              alt=""
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-4">
+            <img
+              src="../Images/SB-2.jpg"
+              alt=""
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-4">
+            <img
+              src="../Images/SB-3.jpg"
+              alt=""
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-4 pt-5">
+            <img
+              src="../Images/SB-4.jpg"
+              alt=""
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-4 pt-5">
+            <img
+              src="../Images/SB-5.jpg"
+              alt=""
+              class="img-fluid gallery-img"
+            />
+          </div>
+          <div class="col-4 pt-5">
+            <img
+              src="../Images/SB-6.jpg"
+              alt=""
+              class="img-fluid gallery-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="d-flex justify-content-between contact-box m-4">
+        <div>
+          <h4>Work enquiry</h4>
+          <p class="text-muted">Let's work together</p>
+        </div>
+        <div>
+          <a
+            href="contact.html"
+            class="btn btn-branding hidden"
+            title="Email me"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+      <div>
+        <a
+          href="mailto:rainbowsoulbath@gmail.com"
+          target="_blank"
+          class="email-link"
+          >rainbowsoulbath@gmail.com</a
+        >
+      </div>
+      <div class="social-links d-flex justify-content-center">
+        <a href="https://github.com/Sarahwcode" class="link-space"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="#" class="link-space">
+          <i class="fa-brands fa-instagram"></i
+        ></a>
+        <a href="#" class="link-space">
+          <i class="fa-brands fa-facebook"></i
+        ></a>
+      </div>
+      <p class="text-center">
+        This Project was coded by Sarah Ward and open sourced on
+        <a href="https://github.com/Sarahwcode/Rainbow-Soulbath" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </footer>
+  </body>
 </html>
