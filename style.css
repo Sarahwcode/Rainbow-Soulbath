@@ -20,6 +20,8 @@ body {
 
 section {
   padding-top: 20px;
+
+  font-family: "Playfair Display", serif;
 }
 .about-me section {
   margin: 20px auto;
@@ -114,6 +116,7 @@ hr {
 }
 
 .container-landing {
+  display: block;
   padding: 40px;
 }
 .picture-grid {
@@ -127,7 +130,6 @@ hr {
     url("Images/image-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
   width: 100%;
   border-radius: 30px;
 }
@@ -136,7 +138,6 @@ hr {
     url("Images/image-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
   width: 100%;
   border-radius: 30px;
 }
@@ -145,7 +146,6 @@ hr {
     url("Images/image-3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
   width: 100%;
   border-radius: 30px;
 }
@@ -154,13 +154,12 @@ hr {
     url("Images/image-4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
   width: 100%;
   border-radius: 30px;
 }
 .lp-pic {
   box-shadow: 2px 2px 2px 2px rgb(80, 79, 79);
-  padding: 200px;
+  padding: 150px;
 }
 .lp-pic p:hover {
   transform: scale(1.3);
@@ -262,17 +261,36 @@ hr {
 .gallery-video {
   padding: 100px;
 }
-.class-background section {
-  max-width: 1200px;
-  margin: 50px;
-}
 .class-background {
-  background-image: url("Images/SB-1.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  padding: 500px;
-  border-radius: 30px;
+  padding: 20px;
+}
+.class-grid {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-gap: 20px;
+}
+.card {
+  border: 1 solid rgb(228, 171, 180);
+  border-radius: 10px;
+}
+.card h2 {
+  text-align: center;
+  padding: 10px;
+}
+.card p {
+  padding: 20px;
+  font-size: 20px;
+}
+.card img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+}
+.class-button {
+  padding: 20px 30px;
+  border-radius: 10px;
+  background: #edb1f1;
+  font-size: 30px;
 }
 
 @media (max-width: 1400px) {
@@ -281,7 +299,7 @@ hr {
     height: 300px;
   }
   .picture-grid {
-    grid-template-columns: 4fr;
+    grid-template-columns: 1fr;
     align-items: center;
   }
   .picture-grid img {
@@ -305,7 +323,7 @@ hr {
   }
   .lp-pic p {
     font-size: 20px;
-    padding: 5px;
+    padding: 10px;
   }
   .lp-pic p:hover {
     transform: scale(1);
@@ -314,5 +332,8 @@ hr {
   }
   .lp-pic h2 {
     padding: 5px;
+  }
+  .class-grid {
+    grid-template-columns: 1fr;
   }
 }
