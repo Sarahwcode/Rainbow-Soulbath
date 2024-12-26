@@ -92,6 +92,10 @@ hr {
   color: #edb1f1;
   padding-bottom: 50px;
 }
+.landing-page a {
+  text-decoration: none;
+  color: black;
+}
 
 .heading {
   font-family: "Playfair Display", serif;
@@ -285,6 +289,10 @@ hr {
   border-radius: 10px;
   width: 100%;
   height: 100%;
+}
+.card a {
+  text-decoration: none;
+  color: black;
 }
 .class-button {
   padding: 20px 30px;
