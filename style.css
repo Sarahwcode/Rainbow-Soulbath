@@ -127,6 +127,7 @@ hr {
   display: grid;
   grid-template-columns: 2fr 2fr;
   grid-gap: 20px;
+  width: 100%;
 }
 
 .landing-page-pic1 {
@@ -308,10 +309,6 @@ hr {
   }
   .picture-grid {
     grid-template-columns: 1fr;
-    align-items: center;
-  }
-  .picture-grid img {
-    height: 50%;
   }
 
   .landing-page {
@@ -327,10 +324,10 @@ hr {
     padding: 0px;
   }
   .lp-pic {
-    padding: 0px;
+    padding: 100px;
   }
   .lp-pic p {
-    font-size: 20px;
+    font-size: 40px;
     padding: 10px;
   }
   .lp-pic p:hover {
