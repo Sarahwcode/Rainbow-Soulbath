@@ -241,6 +241,16 @@ hr {
   font-size: 30px;
   font-family: "Poppins", sans-serif;
 }
+.booking-form {
+  display: block;
+}
+.booking-form div {
+  margin-top: 10px;
+}
+
+.long-answer {
+  height: 100px;
+}
 .word {
   padding: 20px;
 }
