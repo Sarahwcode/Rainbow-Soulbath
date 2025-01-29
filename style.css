@@ -185,6 +185,11 @@ hr {
   font-family: "Playfair Display", serif;
   opacity: 0;
 }
+.contact-me {
+  padding: 20px 30px;
+  font-size: 20px;
+  background-color: #e4ace9;
+}
 
 .email-link {
   font-family: "Poppins", sans-serif;
@@ -353,5 +358,8 @@ hr {
   }
   .class-grid {
     grid-template-columns: 1fr;
+  }
+  .contact-me {
+    display: none;
   }
 }
