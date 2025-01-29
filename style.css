@@ -73,10 +73,11 @@ hr {
   background-position: center;
   text-align: center;
   padding: 400px;
-  margin: 40px 20px 40px 20px;
   font-family: "Playfair Display", serif;
-  border-radius: 10px;
+  border-end-end-radius: 500px;
+  border-end-start-radius: 500px;
 }
+
 .landing-page button {
   padding: 20px 30px;
   border-radius: 10px;
@@ -165,7 +166,6 @@ hr {
 .lp-pic {
   box-shadow: 2px 2px 2px 2px rgb(80, 79, 79);
   padding: 100px;
-  display: block;
 }
 .lp-pic p:hover {
   transform: scale(1.2);
