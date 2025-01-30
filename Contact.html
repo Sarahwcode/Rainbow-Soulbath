@@ -77,21 +77,7 @@
       </nav>
     </div>
 
-    <section class="text-center">
-      <form id="form">
-        <label class="lable-text" for=""
-          >Think of a word that brings you peace...</label
-        >
-        <input
-          type="text"
-          placeholder="Enter the word here...."
-          id="form-text"
-          class="form-text"
-        />
-        <input type="submit" id="form-submit" class="submit" />
-      </form>
-      <h2 id="word" class="word">Word</h2>
-    </section>
+    <section class="text-center"></section>
     <footer>
       <div class="d-flex justify-content-between contact-box m-4">
         <div>
@@ -135,28 +121,5 @@
         >
       </p>
     </footer>
-    <script>
-      function wordDisplay(response) {
-        return response.data.answer;
-      }
-
-      function peaceWord(event) {
-        event.preventDefault();
-        let formSubmit = document.querySelector("#form-text");
-        let apiKey = "145ba0dc50b14bt75oafffd6a19b4a36";
-        let prompt = `user instructions are to Generate a prayer from ${formSubmit.value}`;
-        let context =
-          "you are thinking of a meditation practice or prayer with the word, keep this small and simple and only small lines. <p>.";
-        let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
-        let wordElement = document.querySelector("#word");
-        wordElement.innerHTML = `generating word about ${formSubmit.value}...`;
-        axios.get(apiUrl).then((response) => {
-          wordElement.innerHTML = wordDisplay(response);
-        });
-      }
-
-      let formText = document.querySelector("#form");
-      formText.addEventListener("submit", peaceWord);
-    </script>
   </body>
 </html>
