@@ -39,12 +39,11 @@ h1 {
   -moz-text-fill-color: transparent; /* For Firefox */
   background-image: linear-gradient(
     to right,
-    #ff0000,
-    #ff7f00,
-    #7f00ff,
-    #ff0000,
-    #00ff00,
-    #0000ff
+    #40E0D0,
+  
+    #FFFF00,
+    #00ff00
+   
   );
   -webkit-background-clip: text; /* For Safari */
   -moz-background-clip: text; /* For Firefox */
@@ -67,8 +66,8 @@ hr {
 }
 
 .landing-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("Images/testing.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("Images/heart\ cloud\ rainbow.avif");
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -132,8 +131,8 @@ hr {
 }
 
 .landing-page-pic1 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("Images/image-1.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("Images/womens\ fairies.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -174,13 +173,14 @@ hr {
 }
 .lp-pic a {
   text-decoration: none;
-  color: #e4ace9;
+  color: #fdf6fd;
+ 
   font-size: 60px;
   font-family: "Playfair Display", serif;
 }
 .lp-pic p {
   padding-top: 40px;
-  color: #e4ace9;
+  color: #fdf6fd;
   font-size: 30px;
   font-family: "Playfair Display", serif;
   opacity: 0;
