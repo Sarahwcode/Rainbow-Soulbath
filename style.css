@@ -139,8 +139,8 @@ hr {
   border-radius: 30px;
 }
 .landing-page-pic2 {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("Images/image-2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("Images/dream\ catcher.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -148,15 +148,16 @@ hr {
 }
 .landing-page-pic3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("Images/image-3.jpg");
+    url("Images/transformative\ Expereince\ .jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
   border-radius: 30px;
+
 }
 .landing-page-pic4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("Images/image-4.jpg");
+    url("Images/one\ to\ one.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -164,7 +165,7 @@ hr {
 }
 .lp-pic {
   box-shadow: 2px 2px 2px 2px rgb(80, 79, 79);
-  padding: 100px;
+  padding: 70px;
 }
 .lp-pic p:hover {
   transform: scale(1.2);
@@ -174,14 +175,13 @@ hr {
 .lp-pic a {
   text-decoration: none;
   color: #fdf6fd;
- 
-  font-size: 60px;
+  font-size: 40px;
   font-family: "Playfair Display", serif;
 }
 .lp-pic p {
   padding-top: 40px;
   color: #fdf6fd;
-  font-size: 30px;
+  font-size: 25px;
   font-family: "Playfair Display", serif;
   opacity: 0;
 }
