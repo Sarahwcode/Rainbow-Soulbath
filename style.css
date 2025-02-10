@@ -89,7 +89,7 @@ hr {
   background: #7f00ff;
 }
 .landing-page-title {
-  color: #edb1f1;
+  color: #fdf6fd;
   padding-bottom: 50px;
 }
 .landing-page a {
@@ -332,9 +332,7 @@ hr {
   .landing-page {
     padding: 150px;
   }
-  .landing-page-title {
-    /*display: none;*/
-  }
+
   .landing-page-head {
     font-size: 20px;
   }
