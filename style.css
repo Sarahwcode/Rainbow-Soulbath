@@ -333,7 +333,7 @@ hr {
     padding: 150px;
   }
   .landing-page-title {
-    display: none;
+    /*display: none;*/
   }
   .landing-page-head {
     font-size: 20px;
