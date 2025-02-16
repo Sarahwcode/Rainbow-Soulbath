@@ -179,6 +179,10 @@ hr {
   font-family: "Playfair Display", serif;
 
 }
+
+.lp-pic a:hover {
+  color: #3cf039;
+}
 .lp-pic p {
   padding-top: 40px;
   padding-left: 10px;
