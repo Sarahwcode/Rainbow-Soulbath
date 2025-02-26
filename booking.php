@@ -12,7 +12,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $terms = isset($_POST["terms_and_conditions"]) ? "Agreed" : "Not Agreed";
 
     // Build the email message
-    $to = "rainbowsoulbath@gmail.com";
+    $to = "sarah_ward90@live.com";
     $subject = "Booking Request from Website";
     $message = "Full Name: " . $fullName . "\n" .
         "Email Address: " . $emailAddress . "\n" .
