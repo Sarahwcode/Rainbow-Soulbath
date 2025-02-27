@@ -80,123 +80,69 @@
 
     <section class="text-center">
       <h2>Book a session</h2>
-      <form
-        action="booking.php"
-        method="post"
-        enctype="text/plain"
-        class="booking-form"
-      >
+      <form action="booking.php" method="post" enctype="text/plain" class="booking-form">
         <div>
-          <label for="full name">Enter your full name:</label>
+            <label for="fullName">Enter your full name:</label>
         </div>
         <div>
-          <input
-            type="text"
-            name="Full Name"
-            title="Enter your full name:"
-            placeholder="Enter your full name..."
-            required
-          />
+            <input type="text" name="fullName" title="Enter your full name:" placeholder="Enter your full name..." required />
         </div>
         <div>
-          <label for="Email Address">Email Address: </label>
+            <label for="emailAddress">Email Address: </label>
         </div>
         <div>
-          <input
-            type="text"
-            name="email Address"
-            title="Email"
-            placeholder="Enter your Email..."
-            required
-          />
+            <input type="text" name="emailAddress" title="Email" placeholder="Enter your Email..." required />
         </div>
         <div>
-          <label for="">Choose the session you wish to book: </label>
+            <label for="sessions">Choose the session you wish to book: </label>
         </div>
         <div>
-          <select name="sessions" id="sessions">
-            <option value="">Please Select...</option>
-            <option value="Not sure">Not sure</option>
-            <option value="Vibrant Healing & Exploration">
-              Vibrant Healing & Exploration
-            </option>
-            <option value="Transformative Experience">
-              Transformative Experience
-            </option>
-            <option value="Book Session">Book Session</option>
-            <option value="The Power of Sound">The Power of Sound</option>
-          </select>
+            <select name="sessions" id="sessions">
+                <option value="">Please Select...</option>
+                <option value="Not sure">Not sure</option>
+                <option value="Vibrant Healing & Exploration">Vibrant Healing & Exploration</option>
+                <option value="Transformative Experience">Transformative Experience</option>
+                <option value="Book Session">Book Session</option>
+                <option value="The Power of Sound">The Power of Sound</option>
+            </select>
         </div>
         <div>
-          <label
-            >What are you hoping to gain from this sound meditation?
-          </label>
+            <label>What are you hoping to gain from this sound meditation?</label>
         </div>
         <div>
-          <textarea
-            name="What are you hoping to gain from this sound meditation?"
-            class="long-answer"
-            type="text"
-            title="text"
-            placeholder="Enter your answer here .."
-            required
-          ></textarea>
+            <textarea name="gain" class="long-answer" type="text" title="text" placeholder="Enter your answer here .." required></textarea>
         </div>
         <div>
-          <label for=""
-            >How did you hear about Rainbow sound bath meditation?
-          </label>
+            <label for="">How did you hear about Rainbow sound bath meditation?</label>
         </div>
         <div>
-          <textarea
-            name="How did you hear about Rainbow sound bath meditation?"
-            class="long-answer"
-            type="text"
-            title="text"
-            placeholder="Enter your answer here .."
-            required
-          ></textarea>
+            <textarea name="howHeard" class="long-answer" type="text" title="text" placeholder="Enter your answer here .." required></textarea>
         </div>
         <div>
-          <label> Have you done a sound bath session before? </label>
+            <label> Have you done a sound bath session before? </label>
         </div>
         <div>
-          <select name="Have you done a sound bath session before?" id="yes-no">
-            <option value="">Please Select...</option>
-            <option value="Not sure">Not sure</option>
-            <option value="Yes">Yes</option>
-            <option value=">No">No</option>
-          </select>
+            <select name="soundBathExperience" id="yes-no">
+                <option value="">Please Select...</option>
+                <option value="Not sure">Not sure</option>
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
         </div>
         <div>
-          <label
-            >If the answer yes, Could you tell me a bit about your expereience?
-          </label>
+            <label>If the answer yes, Could you tell me a bit about your experience?</label>
         </div>
         <div>
-          <textarea
-            name="If the answer yes, Could you tell me a bit about your expereience?"
-            class="long-answer"
-            type="text"
-            title="text"
-            placeholder="Enter your answer here .."
-          ></textarea>
+            <textarea name="experienceDetails" class="long-answer" type="text" title="text" placeholder="Enter your answer here .."></textarea>
         </div>
         <div>
-          <label for="terms_and_conditions"
-            >If you agree to the terms and conditions please tick the box.
-          </label>
-          <input type="checkbox" name="terms_and_conditions" required />
+            <label for="terms_and_conditions">If you agree to the terms and conditions please tick the box.</label>
+            <input type="checkbox" name="terms_and_conditions" required />
         </div>
         <div>
-          <input
-            type="submit"
-            title="Submit your booking request"
-            required
-            value="Submit your booking request"
-          />
+            <input type="submit" title="Submit your booking request" required value="Submit your booking request" />
         </div>
-      </form>
+    </form>
     </section>
     
   </div>
