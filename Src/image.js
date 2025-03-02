@@ -1,5 +1,6 @@
 function imageClicked(){
-    alert("hello");
+    let image = document.querySelectorAll("gallery-img");
+    image.style.backgroundColor = "red";
 }
 
 
