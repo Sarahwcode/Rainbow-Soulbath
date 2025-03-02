@@ -5,4 +5,4 @@ function imageClicked(){
 
 
 let clickImage = document.getElementById("firstImage");
-clickImage.addEventListener("click", imageClicked)
+clickImage.addEventListener("click", imageClicked);
