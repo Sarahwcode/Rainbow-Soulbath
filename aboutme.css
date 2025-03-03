@@ -1,0 +1,6 @@
+.aboutMeHeader {
+    background: linear-gradient(45deg, red, orange, indigo, violet, red, yellow, blue, green);
+  -webkit-background-clip: text; /* For older browsers (Safari) */
+  background-clip: text;
+  color: transparent;
+}

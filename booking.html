@@ -27,6 +27,7 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="booking.css">
 
     <script src="index.js"></script>
     <script
@@ -79,49 +80,49 @@
     </div>
 
     <section class="text-center">
-      <h2>Book a session</h2>
+      <h2 class="bookingHeader">Book a session</h2>
       <form action="booking.php" method="post" enctype="text/plain" class="booking-form">
-        <div>
+        <div class="formQuestions">
             <label for="fullName">Enter your full name:</label>
         </div>
-        <div>
+        <div class="bookingButton">
             <input type="text" name="fullName" title="Enter your full name:" placeholder="Enter your full name..." required />
         </div>
-        <div>
+        <div class="formQuestions">
             <label for="emailAddress">Email Address: </label>
         </div>
         <div>
-            <input type="text" name="emailAddress" title="Email" placeholder="Enter your Email..." required />
+            <input type="text" name="emailAddress" title="Email" placeholder="Enter your Email..." required class="bookingButton" />
         </div>
-        <div>
+        <div class="formQuestions">
             <label for="sessions">Choose the session you wish to book: </label>
         </div>
-        <div>
+        <div class="bookingButton">
             <select name="sessions" id="sessions">
                 <option value="">Please Select...</option>
                 <option value="Not sure">Not sure</option>
                 <option value="Vibrant Healing & Exploration">Vibrant Healing & Exploration</option>
                 <option value="Transformative Experience">Transformative Experience</option>
-                <option value="Book Session">Book Session</option>
+                <option value="Book Session">Women's Circle</option>
                 <option value="The Power of Sound">The Power of Sound</option>
             </select>
         </div>
-        <div>
+        <div class="formQuestions">
             <label>What are you hoping to gain from this sound meditation?</label>
         </div>
         <div>
             <textarea name="gain" class="long-answer" type="text" title="text" placeholder="Enter your answer here .." required></textarea>
         </div>
-        <div>
-            <label for="">How did you hear about Rainbow sound bath meditation?</label>
+        <div class="formQuestions">
+            <label for="">How did you hear about Rainbow soulbath meditation?</label>
         </div>
         <div>
             <textarea name="howHeard" class="long-answer" type="text" title="text" placeholder="Enter your answer here .." required></textarea>
         </div>
-        <div>
+        <div class="formQuestions">
             <label> Have you done a sound bath session before? </label>
         </div>
-        <div>
+        <div class="bookingButton">
             <select name="soundBathExperience" id="yes-no">
                 <option value="">Please Select...</option>
                 <option value="Not sure">Not sure</option>
@@ -129,17 +130,29 @@
                 <option value="No">No</option>
             </select>
         </div>
-        <div>
+        <div class="formQuestions">
             <label>If the answer yes, Could you tell me a bit about your experience?</label>
         </div>
         <div>
             <textarea name="experienceDetails" class="long-answer" type="text" title="text" placeholder="Enter your answer here .."></textarea>
         </div>
         <div>
-            <label for="terms_and_conditions">If you agree to the terms and conditions please tick the box.</label>
-            <input type="checkbox" name="terms_and_conditions" required />
+          <div class="formQuestions">
+            <label>Do you have any allergies we need to be aware of?</label>
         </div>
         <div>
+            <textarea name="allergiesDetails" class="long-answer" type="text" title="text" placeholder="Enter your answer here .."></textarea>
+        </div>
+          <div>
+          <label for="Mailing List consent">Would you like to be notified for any future discounts, retreats or events</label>
+          <input type="checkbox" name="terms_and_conditions" required />
+        </div>
+            <label for="terms_and_conditions">If you agree to the <a href="#">terms and conditions</a> and  <a href="">disclaimer</a> please tick the box.</a></label>
+            
+            
+            <input type="checkbox" name="terms_and_conditions" required />
+        </div>
+        <div class="bookingButton">
             <input type="submit" title="Submit your booking request" required value="Submit your booking request" />
         </div>
     </form>

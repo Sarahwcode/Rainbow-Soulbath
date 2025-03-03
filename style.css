@@ -262,6 +262,7 @@ hr {
 
 .long-answer {
   height: 100px;
+  width: 30%;
 }
 .word {
   padding: 20px;
