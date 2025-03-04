@@ -97,9 +97,6 @@ hr {
   color: black;
 }
 
-
-
-
 .container-landing {
   display: block;
   padding: 40px;
@@ -162,11 +159,10 @@ hr {
 }
 
 .lp-pic a:hover {
-  color: #3cf039;
+  color: #edb1f1;
 }
 .lp-pic p {
-  padding-top: 40px;
-  padding-left: 10px;
+ padding: 20px;
   color: #fdf6fd;
   font-size: 25px;
   font-family: "Playfair Display", serif;
@@ -306,6 +302,9 @@ hr {
   border-radius: 10px;
   background: #edb1f1;
   font-size: 30px;
+}
+.bookingEnquiry {
+  text-decoration: none;
 }
 
 @media (max-width: 1400px) {
