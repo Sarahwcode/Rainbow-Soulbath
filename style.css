@@ -307,6 +307,50 @@ hr {
   text-decoration: none;
 }
 
+.testimonials {
+  position: relative; /* Needed for absolute positioning of controls if desired */
+  width: 80%; /* Adjust as needed */
+  margin: 0 auto;
+  overflow: hidden; /* Important to hide testimonials that are out of view */
+}
+
+.testimonial-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out; /* Smooth transition for scrolling */
+}
+
+.testimonial-item {
+  min-width: 100%; /* Each testimonial takes up the full width of the container */
+  box-sizing: border-box;
+  padding: 20px;
+  text-align: center;
+  flex-shrink: 0; /* Prevent items from shrinking */
+  display: none; /* Hide all by default, JS will show 'active' */
+}
+
+.testimonial-item.active {
+  display: block; /* Show the active testimonial */
+}
+
+.testimonial-controls {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.testimonial-controls button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.testimonial-controls button:hover {
+  background-color: #0056b3;
+}
+
 @media (max-width: 1400px) {
   .first-image {
     width: 300px;
