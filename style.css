@@ -320,7 +320,7 @@ hr {
 }
 
 .testimonial-item {
-  min-width: 100%; /* Each testimonial takes up the full width of the container */
+  max-width: 100%; /* Each testimonial takes up the full width of the container */
   box-sizing: border-box;
   padding: 20px;
   text-align: center;
