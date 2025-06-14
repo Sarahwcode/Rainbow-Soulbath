@@ -380,7 +380,7 @@ text-align: center;
   color: #ae1f8a;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1400px) {
 
   
   .first-image {
@@ -397,7 +397,12 @@ text-align: center;
 
   .landing-page-head {
     font-size: 40px;
-    padding: 0px;
+    padding: 0px auto;
+    margin: 0px auto;
+  }
+  .landing-page-title {
+    padding: 0px auto;
+    margin: 0px auto;
   }
   .gallery-video {
     padding: 0px;
