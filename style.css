@@ -126,7 +126,7 @@ hr {
 }
 .landing-page-pic3 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("Images/transformative\ Expereince\ .jpg");
+    url("#");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
@@ -330,6 +330,12 @@ hr {
   border-radius: 10px;
   background: #edb1f1;
   font-size: 30px;
+
+  text-align: center;
+}
+.class-button a {
+text-decoration: none;
+color: #ae1f8a;
 }
 .bookingEnquiry {
   text-decoration: none;
