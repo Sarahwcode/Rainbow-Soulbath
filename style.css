@@ -168,6 +168,30 @@ hr {
   font-family: "Playfair Display", serif;
   opacity: 0;
 }
+.five-weeks a {
+  text-decoration: none;
+  color: #fdf6fd;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+}
+.five-weeks p {
+  padding: 20px;
+  color: #fdf6fd;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  opacity: 4;
+}
+.five-weeks ul  {
+  padding: 20px;
+  color: #fdf6fd;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+  opacity: 4;
+  text-decoration: none;
+}
+
+
+ 
 .contact-me {
   padding: 20px 30px;
   font-size: 20px;
@@ -351,6 +375,9 @@ hr {
 
 .testimonial-controls button:hover {
   background-color: #eba4d8;
+}
+.calendar{
+  color: #ae1f8a;
 }
 
 @media (max-width: 1400px) {
