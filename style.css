@@ -168,26 +168,30 @@ hr {
   font-family: "Playfair Display", serif;
   opacity: 0;
 }
+.remember-title {
+  padding-top: 15px;
+}
 .five-weeks a {
   text-decoration: none;
   color: #fdf6fd;
   font-size: 40px;
   font-family: "Playfair Display", serif;
+ 
 }
 .five-weeks p {
-  padding: 20px;
+  padding: 15px;
   color: #fdf6fd;
   font-size: 25px;
   font-family: "Playfair Display", serif;
   opacity: 4;
 }
 .five-weeks ul  {
-  padding: 20px;
+  padding: 15px;
   color: #fdf6fd;
   font-size: 25px;
   font-family: "Playfair Display", serif;
   opacity: 4;
-  text-decoration: none;
+  list-style-type: none;
 }
 
 
