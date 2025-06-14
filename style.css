@@ -31,23 +31,13 @@ section {
 }
 h1 {
   text-align: center;
-
   font-family: "Playfair Display", serif;
   font-size: 100px; /* Adjust font size as needed */
   color: solid; /* Make the text transparent initially */
-  -webkit-text-fill-color: transparent; /* For Safari */
-  -moz-text-fill-color: transparent; /* For Firefox */
-  background-image: linear-gradient(
-    to right,
-    #40E0D0,
-  
-    #FFFF00,
-    #00ff00
-   
-  );
-  -webkit-background-clip: text; /* For Safari */
-  -moz-background-clip: text; /* For Firefox */
+  background: linear-gradient(35deg, red, orange, indigo, violet, red, yellow, blue, green);
+  -webkit-background-clip: text; /* For older browsers (Safari) */
   background-clip: text;
+  color: transparent;
   padding-bottom: 50px;
 }
 hr {
@@ -326,16 +316,16 @@ hr {
   color: black;
 }
 .class-button {
-  padding: 20px 30px;
+  padding: 20px 200px;
   border-radius: 10px;
   background: #edb1f1;
   font-size: 30px;
-
   text-align: center;
 }
 .class-button a {
 text-decoration: none;
 color: #ae1f8a;
+text-align: center;
 }
 .bookingEnquiry {
   text-decoration: none;
@@ -390,7 +380,9 @@ color: #ae1f8a;
   color: #ae1f8a;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 900px) {
+
+  
   .first-image {
     width: 300px;
     height: 300px;
@@ -404,7 +396,8 @@ color: #ae1f8a;
   }
 
   .landing-page-head {
-    font-size: 70px;
+    font-size: 40px;
+    padding: 0px;
   }
   .gallery-video {
     padding: 0px;
