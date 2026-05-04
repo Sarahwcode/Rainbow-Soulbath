@@ -81,12 +81,13 @@
 
     <section class="text-center">
       <h2 class="bookingHeader">Book a session</h2>
-      <form action="booking.php" method="post" enctype="text/plain" class="booking-form">
+      <form name="contact" method="POST" data-netlify="true" class="booking-form">
         <div class="formQuestions">
             <label for="fullName">Enter your full name:</label>
         </div>
         <div class="bookingButton">
             <input type="text" name="fullName" title="Enter your full name:" placeholder="Enter your full name..." required />
+            <input type="hidden" name="form-name" value="contact" />
         </div>
         <div class="formQuestions">
             <label for="emailAddress">Email Address: </label>
@@ -176,7 +177,7 @@
       </div>
       <div>
         <a
-        href="enquries@rainbowsoulbathfamily.co.uk"
+      href="mailto:sarahw181090@gmail.com"
           target="_blank"
           class="email-link"
           >enquiries@rainbowsoulbathfamily.co.uk</a</a
