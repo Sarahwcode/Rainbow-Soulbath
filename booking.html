@@ -99,7 +99,7 @@
             <label for="sessions">Choose the session you wish to book: </label>
         </div>
         <div class="bookingButton">
-            <select name="sessions" id="sessions">
+            <select name="sessions" id="sessions" class="sessions">
                 <option value="">Please Select...</option>
                 <option value="Not sure">Not sure</option>
                 <option value="Standard Sound Session – Nervous System Reset">Standard Sound Session – Nervous System Reset</option>
@@ -109,11 +109,26 @@
                 <option value="REMEMBER WHO YOU ARE">REMEMBER WHO YOU ARE - 5 Weeks Transformative session</option>
             </select>
         </div>
-        <div class="formQuestions">
-    <label for="bookingDate">Select a preferred date:</label>
+       <div class="formQuestions">
+    <label for="bookingDate">Select a preferred date (Wed-Sun):</label>
 </div>
-<div  class="date-field" >
-    <input type="date" id="bookingDate" name="bookingDate" required class="form-control" required/>
+<div class="date-field">
+    <input type="date" id="bookingDate" name="bookingDate" required class="form-control" />
+</div>
+
+<div class="formQuestions mt-3">
+    <label for="bookingTime">Select a time (10am - 3pm):</label>
+</div>
+<div class="date-field">
+    <select id="bookingTime" name="bookingTime" required class="form-control sessions">
+        <option value="">--Choose a time--</option>
+        <option value="10:00">10:00 AM</option>
+        <option value="11:00">11:00 AM</option>
+        <option value="12:00">12:00 PM</option>
+        <option value="13:00">1:00 PM</option>
+        <option value="14:00">2:00 PM</option>
+        <option value="15:00">3:00 PM</option>
+    </select>
 </div>
         <div class="formQuestions">
             <label>What are you hoping to gain from this sound meditation?</label>
@@ -204,6 +219,6 @@
         >
       </p>
     </footer>
-    <script></script>
+     <script src="booking.js"></script>
   </body>
 </html>
