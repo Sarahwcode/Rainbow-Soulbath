@@ -430,6 +430,6 @@ text-align: center;
     grid-template-columns: 1fr;
   }
   .contact-me {
-    display: none;
+    display: inline;
   }
 }

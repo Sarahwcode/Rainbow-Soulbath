@@ -14,3 +14,19 @@
 .bookingButton{
     font-size: 20px;
 }
+
+.date-field {
+    width: 250px; /* Adjust this number to your liking */
+    padding: 10px;
+    border-radius: 8px;
+    display: block;
+    margin: 0 auto; /* This centers it if your form is text-align: center */
+    border: solid 1px black;
+}
+
+/* Optional: Make it wider on mobile so it's easier to tap */
+@media (max-width: 600px) {
+    .date-field {
+        width: 100%;
+    }
+}
