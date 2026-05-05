@@ -1,22 +1,24 @@
 .testimonials {
-    position: relative; /* Needed for absolute positioning of controls if desired */
-    width: 80%; /* Adjust as needed */
-    margin: 0 auto;
-    overflow: hidden; /* Important to hide testimonials that are out of view */
-  }
+    
+  overflow: hidden; 
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* Add a max-width so it doesn't get too huge */
+  margin: 0 auto; 
+}
   
   .testimonial-container {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* Smooth transition for scrolling */
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ensure this stays at 100% */
   }
   
   .testimonial-item {
-    min-width: 100%; /* Each testimonial takes up the full width of the container */
-    box-sizing: border-box;
-    padding: 20px;
-    text-align: center;
-    flex-shrink: 0; /* Prevent items from shrinking */
-    display: none; /* Hide all by default, JS will show 'active' */
+ flex: 0 0 100%; /* This forces each slide to be EXACTLY the width of the container */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   }
   
   .testimonial-item.active {

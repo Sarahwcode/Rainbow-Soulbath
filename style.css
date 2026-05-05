@@ -125,11 +125,12 @@ hr {
 }
 .landing-page-pic4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("Images/one\ to\ one.jpg");
+    url("Images/mushroom.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
   border-radius: 30px;
+  background-position: center;
 }
 .lp-pic {
   display: flex;

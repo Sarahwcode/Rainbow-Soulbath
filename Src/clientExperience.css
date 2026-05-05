@@ -1,0 +1,110 @@
+/* Container for the entire gallery section */
+
+.testimonial-controls {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; 
+  z-index: 10;
+}
+  
+  .testimonial-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%; /* Ensure this stays at 100% */
+  }
+  
+  .testimonial-item {
+ flex: 0 0 100%; /* This forces each slide to be EXACTLY the width of the container */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+/* Ensure images fit well within the slider */
+.gallery-img {
+  max-width: 80%; /* Adjust size of image within the slide */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+.gallery-img:hover {
+  transform: scale(1.02);
+}
+
+/* Positioning controls over the gallery */
+.testimonial-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  pointer-events: none; /* Prevents container from blocking clicks */
+  z-index: 10;
+}
+/* Navigation Buttons Styling */
+.testimonial-controls button {
+  pointer-events: auto; 
+  background: rgba(174, 31, 138, 0.8); 
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  
+  /* These lines pull the buttons outside the 100% width container */
+  position: relative;
+}
+
+.testimonial-controls button:hover {
+  background: rgba(174, 31, 138, 1);
+  transform: scale(1.1);
+}
+.video-css {
+  width: 80%; /* Adjust so videos don't touch the edges */
+  border-radius: 15px;
+}
+.prev-btn {
+  left: -20px; /* Pulls the button left, away from the image */
+}
+
+.next-btn {
+  right: -20px; /* Pulls the button right, away from the image */
+}
+
+/* Ensure the main container has enough side padding so the buttons don't hit the screen edge */
+.testimonials {
+  overflow: visible; /* Changed from hidden to see buttons if they go outside */
+  position: relative;
+  width: 85%; /* Give some space on the sides for the buttons to live */
+  margin: 0 auto;
+}
+
+/* We still want the inner part to hide the sliding images */
+.testimonial-container-wrapper {
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gallery-img {
+    max-width: 95%;
+  }
+  
+  .testimonial-controls button {
+    padding: 10px 15px;
+    margin: 0 5px;
+  }
+}

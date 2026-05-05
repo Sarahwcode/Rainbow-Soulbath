@@ -13,6 +13,7 @@
 }
 .bookingButton{
     font-size: 20px;
+   
 }
 
 .date-field {
@@ -25,6 +26,10 @@
 }
 .contact-me-social-links{
     padding-top: 50px;
+}
+#sessions{
+    padding: 15px;
+    max-width: 100%;
 }
 
 /* Optional: Make it wider on mobile so it's easier to tap */
