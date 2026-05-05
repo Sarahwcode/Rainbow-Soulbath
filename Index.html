@@ -20,6 +20,8 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
@@ -72,7 +74,7 @@
                 <a class="nav-link" href="classes.html">Sessions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Src/images.html">Gallery</a>
+                <a class="nav-link" href="Src/images.html">Client Experiences</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Contact.html">Contact me</a>
@@ -98,66 +100,23 @@
     </section>
 
     <section>
-      <div class="container-landing">
-        
-          
-          <div class="landing-page-pic2 img-fluid text-center five-weeks">
-            <h2 class="remember-title">
-              <a href="classes.html">REMEMBER WHO YOU ARE</a>
-            </h2>
-            <p>
-              "Sound Saved My Life."
-
-              Have you walked a path of burnout, emotional overwhelm, feeling lost and without purpose?
-              
-              For 25 years, I navigated that terrain. Working with sound reconnected me to my deepest truth and the ancient wisdom within, transforming my reality. Now, I guide others through this same remembering.
-            </p>
-              <p>
-              Are you:
-              <ul>
-              
-               <li> A woman or man ready to shift, heal, and align?</li> 
-              
-              <li>Feeling anxious, disconnected, or stuck? </li>
-              
-               <li>Drawn to energy work, ritual, and sound healing?</li>
-              
-               <li> Experiencing a significant life transition?</li> 
-              
-               <li> Ready to awaken your ancient wisdom with?</li> 
-              </ul>
-              </p>
-              <p>
-              Join me for a transformative 5-Week Journey,
-              
-              WEEKLY THEMES:
-              <ul>
-               <li> WEEK 1 - Air: Initiate & Breathe</li>
-              
-               <li> WEEK 2 - Water: Cleanse & Release</li>
-              
-               <li> WEEK 3 - Fire: Transform & Ignite</li>
-              
-               <li> WEEK 4 - Earth: Ground & Receive</li>
-              
-               <li> WEEK 5 - Remember: Return to Your Truth</li>
-              </ul>
-              
-              <p>WHAT YOU WILL RECEIVE:</p>
-              <ul>
-               <li> Weekly in-person sound healing sessions</li>
-              
-               <li> Supportive Zoom calls & rituals</li>
-              
-            <li> Intentions, practices & tasks for deep inner work</li>
-              
-               <li>Tools to reset your nervous system & awaken clarity</li>
-              </ul>
-            </p>
-          </div>
-          
-        
+      <section class="text-center">
+      <form id="form">
+        <div>
+        <label class="lable-text" for=""
+          >Think of a word that brings you peace...</label
+        >
       </div>
+        <input
+          type="text"
+          placeholder="Enter the word here...."
+          id="form-text"
+          class="form-text"
+        />
+        <input type="submit" id="form-submit" class="submit" />
+      </form>
+      <h2 id="word" class="word">Your prayer or poem will generate here.....</h2>
+    </section>
     
     </section>
     <section  class ="testimonials text-center">
@@ -203,6 +162,26 @@ and completely open to receiving whatever I needed in that moment."</em></div>
 "I am deeply grateful for Carina and her gift. If you are on a healing path, curious about sound therapy, 
 or simply seeking a deeper connection with yourself, I cannot recommend her enough. This is not just healing—it’s 
 remembering who you truly are."" </em></div>
+</div>
+ <div class="testimonial-item"><em>
+"What a fantastic treatment! My body feels like it has been re-tuned. The theme was very appropriate as it did remind me of who I am. I could feel a whole lot of emotional baggage being released. Thank you and I look forward to a further session. ❤️❤️" </em></div>
+</div>
+ <div class="testimonial-item"><em>
+"WOW Yesterday was really something special... i'm still processing it ✨💛✨
+
+Thank you ALL for such an amazing experience ... and I'm hoping it's just the start of many more to come. A big thank you to Carina opening your home and your heart ❤️, and to Aina for being one of my greatest teachers. I'm feeling so grateful & truly blessed 💛🙏🏾✨" </em></div>
+</div>
+ <div class="testimonial-item"><em>
+"I feel so grateful for yesterday's ceremony, thanks for a wonderful experience, much love to you & Pynkimalinki Pynk TheGift xxx 😘😘😘" </em></div>
+</div>
+ <div class="testimonial-item"><em>
+"This was a very positive experience for me.Powerful Movement to my leftside ..Then the energy concentrated on the centre of my face healing powers working hard on my nose surgery.Felt the upliftment and clearing very stongly.. A fantastic experience indeed. Anne💫🍄💫.. ❤️💛💚" </em></div>
+</div>
+ <div class="testimonial-item"><em>
+"Thanks so much for this afternoon, it's blown me away with the whole experience, you couldn't have done it any better, the people there were amazing & it's just what I needed xx 😘" </em></div>
+</div>
+ <div class="testimonial-item"><em>
+"I have never meditated before and was very doubtful, but I must say that the meditation with the sound and bell therapy was amazing and I really feel have benefited from this and feel so much lighter, I would definitely recommend this, thank you for prompting me to attend ..." </em></div>
 </div>
 <div class="testimonial-controls">
   <button id="prevBtn">Previous</button>
@@ -250,5 +229,28 @@ remembering who you truly are."" </em></div>
         >
       </p>
     </footer>
+     <script>
+      function wordDisplay(response) {
+        return response.data.answer;
+      }
+
+      function peaceWord(event) {
+        event.preventDefault();
+        let formSubmit = document.querySelector("#form-text");
+        let apiKey = "145ba0dc50b14bt75oafffd6a19b4a36";
+        let prompt = `user instructions are to Generate a prayer from ${formSubmit.value}`;
+        let context =
+          "you are thinking of a meditation practice or prayer with the word, keep this small and simple and only small lines. <p>.";
+        let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
+        let wordElement = document.querySelector("#word");
+        wordElement.innerHTML = `generating word about ${formSubmit.value}...`;
+        axios.get(apiUrl).then((response) => {
+          wordElement.innerHTML = wordDisplay(response);
+        });
+      }
+
+      let formText = document.querySelector("#form");
+      formText.addEventListener("submit", peaceWord);
+    </script>
   </body>
 </html>

@@ -132,31 +132,43 @@ hr {
   border-radius: 30px;
 }
 .lp-pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically in the card */
+  align-items: center;     /* Centers content horizontally */
+  min-height: 400px;       /* Ensures cards are a consistent size */
   box-shadow: 2px 2px 2px 2px rgb(80, 79, 79);
-  padding: 70px;
+  text-align: center;
 }
-.lp-pic p:hover {
-  transform: scale(1.2);
-  transition: all 300ms ease-in-out;
+.lp-pic h2 {
+  margin-top: 40px; /* Gives space from the top of the card */
+  text-align: center;
+  padding: 0 20px;
+}
+*.lp-pic p:hover {
+  transform: none; 
   opacity: 1;
-}
+   }
+
 .lp-pic a {
   text-decoration: none;
   color: #fdf6fd;
-  font-size: 40px;
+  font-size: 45px; /* Adjusted size for better grid fit */
   font-family: "Playfair Display", serif;
-
+  display: block;
 }
 
 .lp-pic a:hover {
   color: #edb1f1;
 }
 .lp-pic p {
- padding: 20px;
+padding: 20px;
   color: #fdf6fd;
-  font-size: 25px;
+  font-size: 20px; /* Reduced slightly for better fit */
   font-family: "Playfair Display", serif;
-  opacity: 0;
+  opacity: 1; /* Changed from 0 to 1 so it's always visible */
+  text-align: center; /* Aligns text with the heading */
+  margin: 0;
 }
 .remember-title {
   padding-top: 15px;
@@ -233,20 +245,21 @@ hr {
   font-family: "Poppins", sans-serif;
 }
 .submit {
-  padding: 10px 20px;
+  padding: 18px 20px;
   border-radius: 10px;
   background: #edb1f1;
 }
 .form-text {
-  padding: 10px 80px;
+  padding: 12px 80px;
   border-radius: 10px;
   background: #f0d9f1;
-  font-size: 18px;
+  font-size: 25px;
   font-family: "Poppins", sans-serif;
 }
 .lable-text {
-  font-size: 30px;
+  font-size: 35px;
   font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 .booking-form {
   display: block;
@@ -261,6 +274,9 @@ hr {
 }
 .word {
   padding: 20px;
+   font-family: "Poppins", sans-serif;
+   font-weight: bold;
+   font-size: 30px;
 }
 .gallery-img {
   width: 100%;

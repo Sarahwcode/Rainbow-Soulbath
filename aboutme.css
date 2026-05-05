@@ -1,29 +1,87 @@
+/* Overall Page Background */
+body {
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+  font-family: "Playfair Display", serif;
+  color: #333;
+}
+
+/* Shimmering Rainbow Header */
 .aboutMeHeader {
-    background: linear-gradient(45deg, red, orange, indigo, violet, red, yellow, blue, green);
+  background: linear-gradient(
+    45deg,
+    red,
+    orange,
+    indigo,
+    violet,
+    red,
+    yellow,
+    blue,
+    green
+  );
+
   -webkit-background-clip: text; /* For older browsers (Safari) */
+
   background-clip: text;
+
   color: transparent;
 }
+
 .heading {
-    font-family: "Playfair Display", serif;
+  font-family: "Playfair Display", serif;
 
-    border-radius: 10px;
-
-    color: rgb(83, 81, 81);
-    font-size: 20px;
-    font-weight: bold;
-  }
-.carina-image {
   border-radius: 10px;
+
+  color: rgb(83, 81, 81);
+
+  font-size: 20px;
+
+  font-weight: bold;
 }
 
+@keyframes rainbow-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* About Me Content Text */
+
+/* Image Styling */
+.carina-image {
+  border-radius: 15px;
+  transition: transform 0.3s ease;
+}
+
+.carina-image:hover {
+  transform: scale(1.02); /* Subtle zoom on hover */
+}
+
+/* Footer Link Styling */
+.bookingEnquiry {
+  text-decoration: none;
+  color: #8b00ff; /* Deep violet */
+  transition: color 0.3s ease;
+}
+
+.bookingEnquiry:hover {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+/* Mobile Adjustments */
 @media (max-width: 900px) {
-  
-  
-}
+  .aboutMeHeader {
+    font-size: 2.5rem;
+  }
 
-  
-  
-  
-  
-  
+  .heading {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
