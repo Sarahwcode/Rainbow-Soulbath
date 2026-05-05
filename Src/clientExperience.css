@@ -14,9 +14,10 @@
   
   .testimonial-container {
   display: flex;
+  flex-wrap: nowrap; /* Forces items to stay in one line */
   transition: transform 0.5s ease-in-out;
-  width: 100%; /* Ensure this stays at 100% */
-  }
+  width: 100%; 
+}
   
   .testimonial-item {
  flex: 0 0 100%; /* This forces each slide to be EXACTLY the width of the container */
@@ -103,8 +104,26 @@
     max-width: 95%;
   }
   
+
+  .testimonials {
+    width: 95%; /* Use more of the screen width on mobile */
+  }
+
+  .gallery-img, .video-css {
+    max-width: 100%; /* Make images fill the container better */
+  }
+
+  /* Reset the buttons so they don't hang off the screen */
+  .prev-btn {
+    left: 5px; 
+  }
+
+  .next-btn {
+    right: 5px;
+  }
+
   .testimonial-controls button {
-    padding: 10px 15px;
-    margin: 0 5px;
+    padding: 8px 12px; /* Smaller buttons for thumbs */
+    font-size: 12px;
   }
 }
