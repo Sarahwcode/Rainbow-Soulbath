@@ -17,26 +17,33 @@
   flex-wrap: nowrap; /* Forces items to stay in one line */
   transition: transform 0.5s ease-in-out;
   width: 100%; 
+
 }
   
   .testimonial-item {
- flex: 0 0 100%; /* This forces each slide to be EXACTLY the width of the container */
+flex: 0 0 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 450px; /* Set a standard height for the 'window' */
+  overflow: hidden;
   }
 
 /* Ensure images fit well within the slider */
-.gallery-img {
-  max-width: 80%; /* Adjust size of image within the slide */
-  height: auto;
+.gallery-img, .video-css {
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+ box-shadow: 0 10px 30px rgba(0,0,0,0.15);
   transition: transform 0.3s ease;
+  width: 100%;         /* Takes up the full width of the testimonial-item */
+  max-width: 100%;     /* Prevents it from ever growing larger than its actual size */
+  height: 100%;        /* Maintains the original aspect ratio so it doesn't look stretched */
+  display: block;      /* Removes extra space at the bottom of the image */
+  object-fit: contain;
+   border: 1px solid #885df1;
 }
 
-.gallery-img:hover {
+.gallery-img:hover, .video-css:hover {
   transform: scale(1.02);
 }
 
@@ -72,10 +79,7 @@
   background: rgba(174, 31, 138, 1);
   transform: scale(1.1);
 }
-.video-css {
-  width: 80%; /* Adjust so videos don't touch the edges */
-  border-radius: 15px;
-}
+
 .prev-btn {
   left: -20px; /* Pulls the button left, away from the image */
 }
@@ -90,12 +94,14 @@
   position: relative;
   width: 85%; /* Give some space on the sides for the buttons to live */
   margin: 0 auto;
+  padding: 20px;
 }
 
 /* We still want the inner part to hide the sliding images */
 .testimonial-container-wrapper {
     overflow: hidden;
     width: 100%;
+   
 }
 
 /* Responsive adjustments */
