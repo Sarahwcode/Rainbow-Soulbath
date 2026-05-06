@@ -75,13 +75,32 @@ body {
 }
 
 /* Mobile Adjustments */
+
+/* This targets screens smaller than 768px (standard mobile) */
 @media (max-width: 900px) {
-  .aboutMeHeader {
-    font-size: 2.5rem;
+  /* Targets the row inside the about-me section */
+  .about-me .row {
+    display: flex !important;
+    flex-direction: column !important; /* Forces vertical stack */
+    align-items: center;
   }
 
-  .heading {
-    font-size: 1rem;
+  /* Force the image column to be order #1 */
+  .about-me .col-12:first-child {
+    order: 1 !important;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /* Force the text column to be order #2 */
+  .about-me .col-12.heading {
+    order: 2 !important;
+    width: 100%;
     text-align: center;
+  }
+
+  .carina-image {
+    width: 90%; /* Stops image from hitting screen edges */
+    height: auto;
   }
 }

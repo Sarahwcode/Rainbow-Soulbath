@@ -23,11 +23,13 @@ section {
 
   font-family: "Playfair Display", serif;
 }
+
 .about-me section {
   margin: 20px auto;
   display: block;
-  height: 300px;
-  width: 1300px;
+  width: 100%;      /* Change from 1300px to 100% */
+  max-width: 1200px; /* Optional: sets a limit for desktop */
+  height: auto;     /* Change from 300px to auto so text isn't cut off */
 }
 h1 {
   text-align: center;
@@ -384,6 +386,15 @@ text-align: center;
   color: #ae1f8a;
 }
 
+.about-me {
+  margin: 20px auto;
+  display: block;
+  /* Remove fixed width and height! */
+  width: 100%; 
+  max-width: 1200px; 
+  height: auto; 
+}
+
 @media (max-width: 1400px) {
 
   
@@ -435,5 +446,30 @@ text-align: center;
   }
   .contact-me {
     display: inline;
+  }
+  .about-me .row {
+    display: flex !important;
+    flex-direction: column !important; /* Forces vertical stacking */
+  }
+
+  .about-me .col-12 {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  /* Ensures image is on top */
+  .about-me .col-md-5 {
+    order: 1 !important; 
+  }
+
+  /* Ensures text is on bottom */
+  .about-me .col-md-7 {
+    order: 2 !important;
+  }
+
+  .carina-image {
+    width: 100%;
+    max-width: 350px; /* Prevents image from being too huge */
+    margin-bottom: 20px;
   }
 }
