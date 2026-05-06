@@ -78,35 +78,38 @@
       </nav>
     </div>
 
-    <section class="text-center">
- <form name="contact" method="POST" data-netlify="true" class="booking-form">
-        <div class="formQuestions">
-            <label for="fullName">Enter your full name:</label>
-        </div>
-        <div class="bookingButton">
-            <input type="text" name="Name" title="Enter your full name:" placeholder="Enter your full name..." required />
-            <input type="hidden" name="FullName" value="contact" />
-        </div>
-        <div class="formQuestions">
-            <label for="emailAddress">Email Address: </label>
-        </div>
-        <div>
-            <input type="text" name="EmailAddress" title="Email" placeholder="Enter your Email..." required class="bookingButton" />
-        </div>
-         <div class="formQuestions">
-            <label>Enter your enquiries here</label>
-        </div>
-        <div>
-            <textarea name="Enquiries" class="long-answer" type="text" title="text" placeholder="Enter your answer here .."></textarea>
-       
-          <div>
-            <div class="bookingButton">
-            <input type="submit" title="Submit your booking request" required value="Submit your enquiry" />
-        </div>
-</form>
-    </section>
+    
+<section class="text-center">
+  <form name="contact" method="POST" data-netlify="true" class="booking-form">
+    <!-- Mandatory hidden field for Netlify -->
+    <input type="hidden" name="form-name" value="contact" />
 
+    <div class="formQuestions">
+      <label for="fullName">Enter your full name:</label>
+    </div>
+    <div class="bookingButton">
+      <input type="text" name="Name" placeholder="Enter your full name..." required />
+    </div>
 
+    <div class="formQuestions">
+      <label for="emailAddress">Email Address: </label>
+    </div>
+    <div>
+      <input type="email" name="EmailAddress" placeholder="Enter your Email..." required class="bookingButton" />
+    </div>
+
+    <div class="formQuestions">
+      <label>Enter your enquiries here</label>
+    </div>
+    <div>
+      <textarea name="Enquiries" class="long-answer" placeholder="Enter your answer here .."></textarea>
+    </div>
+
+    <div class="bookingButton">
+      <input type="submit" value="Submit your enquiry" />
+    </div>
+  </form>
+</section>
     <footer>
       
      
