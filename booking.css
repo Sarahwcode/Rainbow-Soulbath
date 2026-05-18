@@ -32,9 +32,41 @@
     max-width: 100%;
 }
 
-/* Optional: Make it wider on mobile so it's easier to tap */
-@media (max-width: 600px) {
-    .date-field {
-        width: 100%;
-    }
+@media (max-width: 768px) {
+  .bookingHeader {
+    font-size: 48px;
+  }
+
+  .formQuestions {
+    font-size: 18px;
+  }
+
+  .bookingButton input,
+  .bookingButton select {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  .sessions {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .bookingHeader {
+    font-size: 32px;
+  }
+
+  .formQuestions {
+    font-size: 16px;
+  }
+
+  .date-field {
+    width: 90%;
+  }
+
+  .long-answer {
+    width: 90%;
+  }
 }

@@ -51,7 +51,7 @@ hr {
 
 .logo-img {
   width: 5%;
-
+  min-width: 50px;
   padding: 0px auto;
   margin: 0px auto;
   border-radius: 10px;
@@ -273,7 +273,7 @@ padding: 20px;
 
 .long-answer {
   height: 100px;
-  width: 30%;
+  width: 50%;
 }
 .word {
   padding: 20px;
@@ -397,7 +397,7 @@ text-align: center;
 
 @media (max-width: 1400px) {
 
-  
+
   .first-image {
     width: 300px;
     height: 300px;
@@ -427,7 +427,7 @@ text-align: center;
   }
   .lp-pic a {
     padding: 20px;
-   
+
   }
   .lp-pic p {
     font-size: 40px;
@@ -459,7 +459,7 @@ text-align: center;
 
   /* Ensures image is on top */
   .about-me .col-md-5 {
-    order: 1 !important; 
+    order: 1 !important;
   }
 
   /* Ensures text is on bottom */
@@ -471,5 +471,131 @@ text-align: center;
     width: 100%;
     max-width: 350px; /* Prevents image from being too huge */
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-item {
+    font-size: 18px;
+    padding: 6px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .landing-page {
+    padding: 60px 20px;
+    border-end-end-radius: 60px;
+    border-end-start-radius: 60px;
+  }
+
+  .landing-page-head {
+    font-size: 32px;
+  }
+
+  .landing-page-title {
+    font-size: 16px;
+  }
+
+  .lp-pic a {
+    font-size: 26px;
+    padding: 10px;
+  }
+
+  .lp-pic p {
+    font-size: 16px;
+  }
+
+  .lable-text {
+    font-size: 22px;
+  }
+
+  .form-text {
+    padding: 10px 16px;
+    font-size: 18px;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .word {
+    font-size: 20px;
+    padding: 12px;
+  }
+
+  .long-answer {
+    width: 90%;
+  }
+
+  .contact-box {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px 20px;
+    gap: 12px;
+  }
+
+  .class-button {
+    padding: 15px 40px;
+    font-size: 20px;
+  }
+
+  .social-links a {
+    margin: 10px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 32px;
+  }
+
+  .landing-page {
+    padding: 40px 12px;
+    border-end-end-radius: 30px;
+    border-end-start-radius: 30px;
+  }
+
+  .landing-page-head {
+    font-size: 26px;
+  }
+
+  .landing-page button {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+
+  .lp-pic a {
+    font-size: 20px;
+  }
+
+  .lp-pic p {
+    font-size: 14px;
+  }
+
+  .lable-text {
+    font-size: 18px;
+  }
+
+  .form-text {
+    font-size: 16px;
+  }
+
+  .word {
+    font-size: 16px;
+  }
+
+  .contact-box {
+    padding: 16px 12px;
+  }
+
+  .class-button {
+    padding: 12px 24px;
+    font-size: 18px;
+  }
+
+  .contact-me {
+    padding: 12px 20px;
+    font-size: 16px;
   }
 }
