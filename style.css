@@ -474,6 +474,20 @@ text-align: center;
   }
 }
 
+@media (max-width: 991.98px) {
+  .navbar .container-fluid {
+    position: relative;
+    justify-content: center;
+  }
+
+  .navbar-toggler {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
 @media (max-width: 768px) {
   .nav-item {
     font-size: 18px;
