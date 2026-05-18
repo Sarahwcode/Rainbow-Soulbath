@@ -4,6 +4,7 @@ body {
     rgba(255, 215, 185, 0.91) 23%,
     rgba(223, 159, 247, 0.8) 93%
   );
+  scroll-behavior: smooth;
 }
 .nav-color {
   background-color: rgb(245, 231, 233);
@@ -322,7 +323,7 @@ padding: 20px;
   color: black;
 }
 .class-button {
-  padding: 20px 200px;
+  padding: 20px 60px;
   border-radius: 10px;
   background: #edb1f1;
   font-size: 30px;
